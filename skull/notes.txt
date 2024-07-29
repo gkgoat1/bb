@@ -1,4 +1,6 @@
 > 2 2 1 2 1 => 2 1 0 2 1 >
 > 0 ... => infinite loop
-> 2 2 => 2 3 < {n base 2 with 1 and 2 as 0 and 1}
-> 2 1 => RIGHT CANDIDACY PROOF
+> 2 2, > 2 1 1 1 prepends 2, > 2 1 2 2 prepends 2 1 2 1, > 2 2 1 1 prepends 2 3, > 2 2 1 2 skips 1, > 2 2 2 2 prepends 2 2, > 2 2 1 1 2 prepends 2 1 0 2 1, > 2 2 1 2 2 skips to [1 1 2], 1 < prepends 0, 3 < prepends 0, flips, 4 < prepends 1, flips, 5 < prepends 0 2 2 2, flips  => see ../a.txt
+> 2 1, > 2 1 2, > 2 2 2, > 2 1 1 2, > 2 1 2 1, > 2 2 2 1, > 2 1 1 1 2, > 2 1 1 2 1, > 2 1 1 2 2, > 2 1 2 1 2, > 2 1 2 2 2, > 2 2 2 1 2, > 2 2 2 2 2, 2 < => infinite ones
+> 2 1 1, > 2 2 1, > 2 1 1 1 1, > 2 1 2 1 1, > 2 1 2 2 1, > 2 2 1 1 1, > 2 2 1 2 1, > 2 2 2 1 1 => halt
+
