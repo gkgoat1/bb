@@ -1,0 +1,4 @@
+> 2 2 1 2 1 => 2 1 0 2 1 >
+> 0 ... => infinite loop
+> 2 2 => 2 3 < {n base 2 with 1 and 2 as 0 and 1}
+> 2 1 => RIGHT CANDIDACY PROOF

@@ -1,7 +1,9 @@
+use anyhow::Context;
 use skol::{Dir, Tape};
 
 fn main() -> anyhow::Result<()> {
-    let l = std::io::stdin().lines().next().unwrap()?;
+    let mut lines = std::io::stdin().lines();
+    let l = lines.next().unwrap()?;
     let mut v = vec![];
     let mut d = None;
     let mut i = None;
@@ -34,6 +36,8 @@ fn main() -> anyhow::Result<()> {
         } else {
             println!("{v}")
         }
+        lines.next().context("interuppted")??;
     }
     return Ok(());
 }
+
